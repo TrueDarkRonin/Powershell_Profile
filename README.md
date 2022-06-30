@@ -24,6 +24,7 @@ Personal PowerShell profile with custom aliases.
 
 ## Requirements:
 - Git Bash
+- Miniconda for conda enviroments
 
 ### Usage:
 For Git and Settings
