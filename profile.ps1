@@ -1,33 +1,26 @@
-# Conda Enviroments
-$Env:CONDA_EXE = "C:/Users/gabri/miniconda3\Scripts\conda.exe"
-$Env:_CE_M = ""
-$Env:_CE_CONDA = ""
-$Env:_CONDA_ROOT = "C:/Users/gabri/miniconda3"
-$Env:_CONDA_EXE = "C:/Users/gabri/miniconda3\Scripts\conda.exe"
-$CondaModuleArgs = @{ChangePs1 = $True}
-Import-Module "$Env:_CONDA_ROOT\shell\condabin\Conda.psm1" -ArgumentList $CondaModuleArgs
+# # -Conda Enviroments-
 
-Remove-Variable CondaModuleArgs
+# $Env:CONDA_EXE = "C:/Users/<User>/miniconda3\Scripts\conda.exe"
+# $Env:_CE_M = ""
+# $Env:_CE_CONDA = ""
+# $Env:_CONDA_ROOT = "C:/Users/<User>/miniconda3"
+# $Env:_CONDA_EXE = "C:/Users/<User>/miniconda3\Scripts\conda.exe"
+# $CondaModuleArgs = @{ChangePs1 = $True}
+# Import-Module "$Env:_CONDA_ROOT\shell\condabin\Conda.psm1" -ArgumentList $CondaModuleArgs
+# Remove-Variable CondaModuleArgs
+# # -Enviroments-
+# function DeActiv { & conda deactivate }
+# New-Alias -Name deac -Value DeActiv
 
-# Set Location
-function CDPy {Set-Location -Path C:\Users\gabri\Code\Python}
-New-Alias -Name gopy -Value CDPy
-
-function CDGit {Set-Location -Path C:\Users\gabri\git}
-New-Alias -Name gogit -Value CDGit
-
+# -Set Location-
 function CDProf {Set-Location -Path C:\Windows\System32\WindowsPowerShell\v1.0}
 New-Alias -Name goprof -Value CDProf
 
-# Enviroments
-function DeActiv { & conda deactivate }
-New-Alias -Name deac -Value DeActiv
-
-# Settings
+# -Settings-
 New-Alias -Name setexpo -Value Set-ExecutionPolicy
 New-Alias -Name getexpo -Value Get-ExecutionPolicy
 
-# Git Commands
+# -Git Commands-
 function Get-GitStatus { & git status -sb $args }
 New-Alias -Name gstat -Value Get-GitStatus -Force -Option AllScope
 
