@@ -29,7 +29,6 @@ Personal PowerShell profile with custom aliases.
 ### Usage:
 For Git and Settings
 - Copy profile to C:\Windows\System32\WindowsPowershell\v1.0
-- Open profile.ps1 and replace <User> with your own directory path
 
 To use PowerShell as a conda enviroment
 - Install miniconda
